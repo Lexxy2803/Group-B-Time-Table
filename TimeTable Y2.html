@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	<style>
+		table{
+			background-color: #007F82;
+			border-collapse: collapse;
+			width: 101%;
+			}
+			
+			th, td {
+				border-top: 1px solid #000;
+				border-left: 1px solid #000;
+				border-right: 1px solid #000;
+				border-bottom: 1px solid #000;
+				padding: 10px; 
+				text-align: left;
+				
+			}
+				#Modules, #Img, #JO, #TT, #UL {
+				text-align: left;
+				border-top: 5px solid #005B53;
+				border-bottom:5px solid #005B5E;
+				border-left: 5px solid #005B5E;
+				border-right: 5px solid #005B5E;
+			}	
+		
+				#Days {
+				background-color: white;
+				border-top: 5px solid #005B5E;
+				border-bottom: 5px solid #005B5E;
+				border-left: 5px solid #005B5E;
+				border-right: 5px solid #005B5E;
+			}	
+				#time {
+				background-color: white;
+				border-bottom: 5px solid #005B5E;
+				border-left: 5px solid #005B5E;
+				border-right: 5px solid #005B5E;
+				border-top: 5px solid #005B5E;
+			}
+				#C1, #C2, #C3, #C4, #C5, #C6{
+				border-bottom: 1px solid #000;
+				border-top: 0px solid #005B5E;
+			}
+				#LDG, #LDN{
+				border-right: 1px solid #000;
+				border-top: 0px;
+				border-bottom: 0px solid #005B5E;
+				border-top: 5px solid #005B5E;
+			}
+				#FDG, #LSD{
+				border-right: 1px solid #000;
+				border-top: 0px solid #fff;
+				border-bottom: 5px solid #005B5E;
+			}
+				#FWD{
+				border-left: 1px solid #000;
+				border-bottom: 0px solid #005B5E;
+			}
+				#FM{
+				border-bottom: 1px solid #000;
+			}
+				#blank {
+				border-right: 5px solid #005B5E;
+				border-top: 0px solid #fff;
+				border-left: 0px;
+				border-bottom: 0px solid #005B5E;
+			}
+				#bottom {
+				border-bottom: 5px solid #005B5E;
+				border-left: 0px;
+				border-right: 0px;
+			}
+				#Right {
+				border-right: 1px solid #000;
+				border-left: 0px;
+			}
+				table.center{
+					margin-left: auto; 
+					margin-right: auto;
+
+			}	
+
+
+				.tooltip{
+					position: relative;
+					display: inline-block;
+					border-bottom: 1px dotted black;
+			}			
+				.tooltip .tooltiptext{
+					visibility: hidden;
+					width: 120px;
+					background-color: black;
+					color: #fff;
+					text-align: center;
+					padding:5px 0;
+					border-radius: 6px;
+					position: absolute;
+					z-index: 1;
+			}
+				.tooltip:hover .tooltiptext {
+					visibility: visible;
+			}
+			</style>
+			<title> Time Table </title>
+							<!--Heading-->
+
+	</head>
+	
+	<body>
+		<div style="margin-top: 40px;">
+		<table style="width:50%" class="center" border="5" cellpadding="10" >
+		<tr>
+			<th colspan = "10">Time Table:</th>
+		</tr>
+		<!-- Row 1 -->
+		<tr>
+			<th id="Days" >Day</th>
+			<td id="time">9:00</td>
+			<td id="time">10:00</td>
+			<td id="time">11:00</td>
+			<td id="time">12:00</td>
+			<td id="time">13:00</td>
+			<td id="time">14:00</td>
+			<td id="time">15:00</td>
+			<td id="time">16:00</td>
+			<td id="time">17:00</td>
+			<td id="time">18:00</td>
+		</tr>
+
+				<!--C1=A/VP
+					C2=ANT
+					C3=SAM
+					C4=ADM
+					C5=IPS
+					C6=DP-->
+
+		<!-- Monday -->
+		<tr>
+			<td id="Days">Monday</td>
+				
+			<td id = "blank" class="C1" colspan = "4" rowspan = "1" bgcolor="#005B5E"></td>
+			<td id="DG" colspan="1" bgcolor="lightgreen">Auido/Video Design <br> (R: 154)<div class="tooltip"><span class="tooltiptext">Tutor: John Farrell. Room: 907.</span></div></a></td>
+			<td id ="C5" colspan="0" bgcolor="lightblue">IT Pro Skills <br> (R: 994)</td>
+			<td id ="C2" colspan="0" bgcolor="yellow">Applied Networking <br> (R: 994)</td>
+			<td id ="C3" colspan="0" bgcolor="green">Systems Analysis Methods <br> (R: 1000)</td>
+			<td id = "blank" class="empty" colspan = "2" rowspan = "1" bgcolor="#005B5E"></td>
+
+			
+		</tr>
+		<!-- Tuesday -->
+		<tr>
+			<td id="Days">Tuesday</td>
+			<td id = "blank" class="empty" colspan = "4" rowspan = "1" bgcolor="#005B5E"></td>			
+			<td id ="C3" colspan="0" bgcolor="green">Systems Analysis Methods <br> (R: 941)</td>
+			<td id = "blank" class="empty" colspan = "1" rowspan = "1" bgcolor="#005B5E"></td>
+			<td id ="C2" colspan="0" bgcolor="yellow">Applied Networking <br> (R: PF05)</td>
+			<td id ="C4" colspan="0" bgcolor="pink">Applied Digital Media <br> (R: 941)</td>
+			<td id ="C2" colspan="0" bgcolor="yellow">Applied Networking <br> (R: 941)</td>
+			<td id ="C5" colspan="1" bgcolor="lightblue">IT Pro Skills <br> (R: 1000)</td>
+
+		</tr>
+		<!-- Wednesday -->
+		<tr>
+			<td id="Days">Wednesday</td>
+			<td id ="C4" colspan="2" bgcolor="pink">Applied Digital Media <br> (R: 481)</td>
+			<td id = "blank" class="empty" colspan = "2" rowspan = "1" bgcolor="#005B5E"></td>
+			<td id ="C3" colspan="0" bgcolor="green">Systems Analysis Methods <br> (R: 903)</td>
+			<td id="DG" colspan="1" bgcolor="lightgreen">Auido/Video Design <br> (R: 907)<div class="tooltip"><span class="tooltiptext">Tutor: John Farrell. Room: 907.</span></div></a></td>
+			<td id = "blank" class="empty" colspan = "4" rowspan = "1" bgcolor="#005B5E"></td>
+		</tr>
+		<!-- Thursday -->
+		<tr>
+			<td id="Days">Thursday</td>
+			<td id ="C2" colspan="2" bgcolor="yellow">Applied Networking <br> (R: CR3)</td>
+			<td id = "blank" class="empty" colspan = "2" rowspan = "1" bgcolor="#005B5E"></td>
+			<td id ="C5" colspan="1" bgcolor="lightblue">IT Pro Skills <br> (R: 154)</td>
+			<td id = "blank" class="empty" colspan = "2" rowspan = "1" bgcolor="#005B5E"></td>
+			<td id ="C6" colspan="1" bgcolor="blue">Digital Photography <br> (R: 370)</td>
+			<td id = "blank" class="empty" colspan = "2" rowspan = "1" bgcolor="#005B5E"></td>
+		</tr>
+		
+		<!-- Friday -->
+		<tr>
+			<td id="Days">Friday</td>
+
+			<td id = "bottom" colspan ="10" bgcolor="#005B5E">No Classes</td>
+		</tr>
+		</div>
+		<!-- <div class="tooltip">
+			<span class="tooltiptext"></span></div>-->
+	</body>
+</html>
+			
